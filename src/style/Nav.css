@@ -1,0 +1,35 @@
+.nav-bar{
+ position: fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ 
+}
+
+
+
+.icon-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.transition-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 300ms ease-in-out;
+  opacity: 0;
+}
+
+.transition-icon.entered {
+  opacity: 1;
+}
+
+
+
+
+
+
+
