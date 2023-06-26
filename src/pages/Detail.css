@@ -1,0 +1,11 @@
+.cal:hover .date{
+    color: white;
+}
+
+.tab-item.active{
+    background-color: #00A3FF;
+    border-radius: 1.4rem;
+}
+.active .date{
+    color: white;
+}

@@ -1,0 +1,12 @@
+{
+    "managers": [
+        {
+            "id": 1,
+            "name": "Emma Smith",
+            "email": "smith@kpmg.com",
+            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-6.jpg",
+            "date": "Aug 19, 2023",
+            "amount": "$772.00"
+        }
+    ]
+}
