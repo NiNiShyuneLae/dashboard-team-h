@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Detail from "./pages/Detail";
 
 import Nav from "./components/Nav";
 import Side from "./components/Side";
@@ -15,6 +16,14 @@ import CreateProject from "./pages/CreateProject";
 
 
 const App = () => {
+
+  return (
+    <div>
+      <Routes></Routes>
+      <Detail />
+    </div>
+  );
+
   const [icon, setIcon] = useState(<BiArrowToRight />);
   const [toggle, setToggle] = useState(false);
 
@@ -35,6 +44,7 @@ const App = () => {
 
     </Routes>
   </div>;
+
 };
 
 export default App;
