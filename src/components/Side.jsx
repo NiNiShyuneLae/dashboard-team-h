@@ -1,15 +1,3 @@
-
-import React from 'react'
-import "../style/Side.css"
-
-const Side = ({toggle}) => {
-  return (
-    <div className={`side-bar ${toggle?"move":"notmove"}`}>Side</div>
-  )
-}
-
-export default Side
-
 import React, { useState } from "react";
 import logo from "../assets/icons/logo-default.svg";
 import { CgProfile } from "react-icons/cg";
@@ -138,8 +126,9 @@ const Side = () => {
                 </ul>
               </div>
             </li>
-            <li>
-              <a className="flex items-center p-2 duration-200 transition-all text-textColor hover:text-primary rounded-lg hover:bg-gray-100">
+
+            <NavLink to={"/user"}>
+              <li className="flex items-center p-2 duration-200 transition-all text-textColor hover:text-primary rounded-lg hover:bg-gray-100">
                 <svg
                   width="24"
                   height="24"
@@ -162,14 +151,17 @@ const Side = () => {
                   ></rect>
                 </svg>
                 <span className="ml-3  text-base">Users</span>
-              </a>
-            </li>
-            <li>
-              <a className="flex items-center p-2 duration-200 transition-all text-textColor hover:text-primary rounded-lg hover:bg-gray-100">
-                <CgProfile className="w-[24px] h-[24px]" />
-                <span className="ml-3  text-base">Profile</span>
-              </a>
-            </li>
+              </li>
+            </NavLink>
+
+            <NavLink to={"/profile"}>
+              <li>
+                <p className="flex items-center p-2 duration-200 transition-all text-textColor hover:text-primary rounded-lg hover:bg-gray-100">
+                  <CgProfile className="w-[24px] h-[24px]" />
+                  <span className="ml-3  text-base">Profile</span>
+                </p>
+              </li>
+            </NavLink>
           </ul>
         </div>
       </aside>
@@ -178,4 +170,3 @@ const Side = () => {
 };
 
 export default Side;
-

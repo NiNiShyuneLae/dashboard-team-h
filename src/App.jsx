@@ -12,27 +12,30 @@ import Profile from "./pages/Profile";
 
 import Dashboard from "./pages/Dashboard";
 import CreateProject from "./pages/CreateProject";
+import ProfileMin from "./pages/ProfileMin";
+import UserMin from "./pages/UserMin";
 
 
 const App = () => {
-  const [icon, setIcon] = useState(<BiArrowToRight />);
-  const [toggle, setToggle] = useState(false);
+  // const [icon, setIcon] = useState(<BiArrowToRight />);
+  // const [toggle, setToggle] = useState(false);
 
-     const handleClick = () => {
-       setIcon(prevIcon => prevIcon.type === BiArrowToRight ? <BiArrowFromRight /> : <BiArrowToRight />);
-       setToggle(!toggle);
-     };
+  //    const handleClick = () => {
+  //      setIcon(prevIcon => prevIcon.type === BiArrowToRight ? <BiArrowFromRight /> : <BiArrowToRight />);
+  //      setToggle(!toggle);
+  //    };
   return <div  >
-    <Nav icon={icon} handleClick={handleClick} toggle={toggle}  />
+    {/* <Nav icon={icon} handleClick={handleClick} toggle={toggle}  /> */}
     {/* <Side toggle={toggle} /> */}
     <Routes>
 
-      {/* <Route path="/" element={<User/>} /> */}
-      <Route path="/" element={<Profile/>} />
 
-      <Route path="/" element={<Dashboard/>}/>
+     <Route path="/" element={<Dashboard/>}/>
       <Route path="/create" element={<CreateProject/>}/>
+      <Route  path="/profile" element={<ProfileMin/>}/> 
+      <Route path="/user" element={<UserMin/>} />
 
+      <Route/>
     </Routes>
   </div>;
 };

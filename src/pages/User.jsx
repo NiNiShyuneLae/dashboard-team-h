@@ -405,13 +405,44 @@ const User = () => {
 
     const [tab, setTab] = useState("menu");
   return (
-      <div className='mt-16 mx-5  '>
+      <div className=' lg:px-[32px] px-[20px]  '>
+              <div className="">
+        <p className=" text-[1.25rem] font-semibold">Projects</p>
+        <div>
+          <nav
+            className="justify-between  pb-3 text-gray-700  sm:flex  bg-gray-5"
+            aria-label="Breadcrumb"
+          >
+            <ol className="inline-flex items-center mb-3 space-x-1 sm:mb-0">
+              <li>
+                <a
+                  href="#"
+                  className=" text-[14px] font-medium text-textColor hover:text-blue-600"
+                >
+                  Home
+                </a>
+              </li>
+              <li aria-current="page">
+                <a href="#" className=" text-[14px] font-medium text-textColor">
+                  / Dashboards
+                </a>
+              </li>
+              <li aria-current="page">
+                <a href="#" className=" text-[14px] font-medium">
+                  <span className="text-textColor">/</span>{" "}
+                  <span className="text-black">Users</span>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
           <Dashboard9 />
           
           <div className='my-10 grid grid-cols-1 md:grid-cols-3 gap-3'>
               <div className='col-span-1 flex items-center  gap-1'>
                  <h1 className='text-lg font-semibold'>Users (38)</h1>
-               <div className='flex bg-green-200 items-center  px-3 py-2 bg-white w-56 rounded-md'>
+               <div className='flex  items-center  px-3 py-2 bg-white w-56 rounded-md'>
                   <BsSearch className='text-textColor' />
                   <input type="search" placeholder='search' className='outline-none bg-transparent text-sm' />
               </div> 
@@ -443,9 +474,9 @@ const User = () => {
           </div>
           {
               tab === "grid" ?
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-6'>
+                  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-6'>
               {
-                  users.map(user =>
+                  users.slice(0, 9).map(user =>
                       <UserCard key={user.id} user={user} />
                     )
               }
@@ -474,7 +505,7 @@ const User = () => {
                         </tr>
                       </thead>
                       {
-                          users.map(user =>
+                          users.slice(0, 10).map(user =>
                               <UserTable key={user.id} user={user} />
                             )
                       }
