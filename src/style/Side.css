@@ -1,0 +1,19 @@
+.side-bar{
+     position: fixed;
+     top: 0;
+     left: 0px;
+    height: 100vh;
+    background: lightcoral;
+    
+}
+
+.notmove{
+    width: 50px;
+    transition: width 0.5s ease-in;
+}
+
+.move{
+    width: 200px;
+    transition: width 0.5s ease-in-out;
+}
+
