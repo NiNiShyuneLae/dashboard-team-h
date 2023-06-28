@@ -20,8 +20,10 @@ import Michelle from "../assets/images/MIchelle.jpg";
 import Francis from "../assets/images/Francis.jpg";
 import John from '../assets/images/John.jpg';
 import Pagination from "./Pagination";
+import { useNavigate } from "react-router-dom";
 
 const ProjectCard = () => {
+  const nav = useNavigate()
   const LightTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} classes={{ popper: className }} />
   ))(({ theme }) => ({
@@ -47,7 +49,7 @@ const ProjectCard = () => {
         </select>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 md:gap-5 lg:gap-10">
-        <div className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
+        <div onClick={() => nav('/detail')} className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
           <div className="flex items-center justify-between">
             <div className="w-[50px] h-[50px] bg-[#f9f9f9] rounded-[0.5rem]">
               <img src={plurk} className="p-[10px]" alt="" />
@@ -105,7 +107,7 @@ const ProjectCard = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
+        <div onClick={() => nav('/detail')} className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
           <div className="flex items-center justify-between">
             <div className="w-[50px] h-[50px] bg-[#f9f9f9] rounded-[0.5rem]">
               <img src={disqus} className="p-[10px]" alt="" />
@@ -156,7 +158,7 @@ const ProjectCard = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
+        <div onClick={() => nav('/detail')} className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
           <div className="flex items-center justify-between">
             <div className="w-[50px] h-[50px] bg-[#f9f9f9] rounded-[0.5rem]">
               <img src={figma} className="p-[10px]" alt="" />
@@ -213,7 +215,7 @@ const ProjectCard = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
+        <div onClick={() => nav('/detail')} className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
           <div className="flex items-center justify-between">
             <div className="w-[50px] h-[50px] bg-[#f9f9f9] rounded-[0.5rem]">
               <img src={sentry} className="p-[10px]" alt="" />
@@ -263,7 +265,7 @@ const ProjectCard = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
+        <div onClick={() => nav('/detail')} className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
           <div className="flex items-center justify-between">
             <div className="w-[50px] h-[50px] bg-[#f9f9f9] rounded-[0.5rem]">
               <img src={xing} className="p-[10px]" alt="" />
@@ -321,7 +323,7 @@ const ProjectCard = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
+        <div onClick={() => nav('/detail')} className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
           <div className="flex items-center justify-between">
             <div className="w-[50px] h-[50px] bg-[#f9f9f9] rounded-[0.5rem]">
               <img src={tvit} className="p-[10px]" alt="" />
@@ -373,7 +375,7 @@ const ProjectCard = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
+        <div onClick={() => nav('/detail')} className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
           <div className="flex items-center justify-between">
             <div className="w-[50px] h-[50px] bg-[#f9f9f9] rounded-[0.5rem]">
               <img src={aven} className="p-[10px]" alt="" />
@@ -432,7 +434,7 @@ const ProjectCard = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
+        <div onClick={() => nav('/detail')} className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
           <div className="flex items-center justify-between">
             <div className="w-[50px] h-[50px] bg-[#f9f9f9] rounded-[0.5rem]">
               <img src={treva} className="p-[10px]" alt="" />
@@ -484,7 +486,7 @@ const ProjectCard = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
+        <div onClick={() => nav('/detail')} className="col-span-1 p-[30px] md:p-[15px] lg:p-[30px] bg-white rounded-lg">
           <div className="flex items-center justify-between">
             <div className="w-[50px] h-[50px] bg-[#f9f9f9] rounded-[0.5rem]">
               <img src={kanba} className="p-[10px]" alt="" />

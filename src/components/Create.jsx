@@ -6,12 +6,14 @@ import Flatpickr from "react-flatpickr";
 import DatePicker from "./DatePicker";
 
 const Create = () => {
-  const navLink = useNavigate();
+  const nav = useNavigate();
   const [personal, setPersonal] = useState(true);
   const [project, setProject] = useState(false);
   const [comment, setComment] = useState(
     `Experience share market at your fingertips with TICK PRO stock investment mobile trading app`
   );
+
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,30 +38,36 @@ const Create = () => {
 
   return (
     <div className="lg:px-[32px] px-[20px] py-8  select-none">
-      <div>
-        <nav
-          className="justify-between  pb-3 text-gray-500  sm:flex  bg-gray-5"
-          aria-label="Breadcrumb"
-        >
-          <ol className="inline-flex items-center mb-3 space-x-1 sm:mb-0">
-            <Link to={"/"}>
-              <li className=" text-[14px] font-medium text-textColor hover:text-blue-600">
-                Home
+            <div className="">
+        <p className=" text-[1.25rem] font-semibold">Projects</p>
+        <div>
+          <nav
+            className="justify-between  pb-3 text-gray-700  sm:flex  bg-gray-5"
+            aria-label="Breadcrumb"
+          >
+            <ol className="inline-flex items-center mb-3 space-x-1 sm:mb-0">
+              <li onClick={() => nav('/')}>
+                <a
+                 
+                  className=" text-[14px] font-medium text-textColor hover:text-blue-600"
+                >
+                  Home
+                </a>
               </li>
-            </Link>
-            <li aria-current="page">
-              <a className=" text-[14px] font-medium text-textColor">
-                / Dashboards
-              </a>
-            </li>
-            <li aria-current="page">
-              <a className=" text-[14px] font-medium">
-                <span className="text-textColor">/</span>{" "}
-                <span className="text-black">Create Projects</span>
-              </a>
-            </li>
-          </ol>
-        </nav>
+              <li aria-current="page">
+                <a href="#" className=" text-[14px] font-medium text-textColor">
+                  / Dashboards
+                </a>
+              </li>
+              <li aria-current="page">
+                <a href="#" className=" text-[14px] font-medium">
+                  <span className="text-textColor">/</span>{" "}
+                  <span className="text-black">Create</span>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
       </div>
       <div className="py-8">
         <div>

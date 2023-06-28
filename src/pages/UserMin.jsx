@@ -5,8 +5,10 @@ import Nav from "../components/Nav";
 import ScrollBtn from "../components/ScrollBtn";
 import Footer from "../components/Footer";
 import Pagination from "../components/Pagination";
+import { useParams } from "react-router-dom";
 
 const UserMin = () => {
+    const {data} = useParams()
     useEffect(() => {
         window.scrollTo(0,0)
     },[])
@@ -14,7 +16,7 @@ const UserMin = () => {
     <div>
       <div className="sm:ml-64 p-0 lg:p-4 lg:pe-[40px]">
         <div className="flex md:block sticky top-0 z-50 bg-white">
-          <Side />
+          <Side num={data}/>
           <Nav />
         </div>
         <ScrollBtn />

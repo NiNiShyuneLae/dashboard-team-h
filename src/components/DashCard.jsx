@@ -58,8 +58,10 @@ const DashCard = () => {
           <p className="text-gray-400 text-lg font-medium mb-6">
             Current Projects
           </p>
-          <div className="flex items-center gap-7">
-            <DoughnutChart />
+          <div className="flex items-center gap-7"  >
+            <div   className="w-[100px] h-[100px]">
+            <DoughnutChart className='w-full'/>
+            </div>
             <div className="flex  flex-col  gap-3">
               <div className="flex justify-between items-center gap-5">
                 <div className="flex items-center gap-4">

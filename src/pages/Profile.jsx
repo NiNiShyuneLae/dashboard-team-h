@@ -1,5 +1,4 @@
 import React from "react";
-import p1 from "../assets/Images/p1.jpg";
 import { GrFormCheckmark } from "react-icons/gr";
 import { BsPersonCircle } from "react-icons/bs";
 import { MdOutlineLocationOn } from "react-icons/md";
@@ -8,8 +7,12 @@ import { BsArrowUpShort } from "react-icons/bs";
 import { BsArrowDownShort } from "react-icons/bs";
 import { TbAlertSmall } from "react-icons/tb";
 import ProductTable from "../components/ProductTable";
+import person from '../assets/images/person.jpg'
+import ProfileChart from "../components/ProfileChart";
+import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
+  const nav = useNavigate()
   const items = [
     {
       id: "#XGY-356",
@@ -69,11 +72,43 @@ const Profile = () => {
     },
   ];
   return (
-    <section className="profile mt-16 mx-4">
+    <section className="profile lg:px-[32px] px-[20px] cursor-pointer">
+            <div className="">
+        <p className=" text-[1.25rem] font-semibold">Projects</p>
+        <div>
+          <nav
+            className="justify-between  pb-3 text-gray-700  sm:flex  bg-gray-5"
+            aria-label="Breadcrumb"
+          >
+            <ol className="inline-flex items-center mb-3 space-x-1 sm:mb-0">
+              <li onClick={() => nav('/')}>
+                <a
+                  
+                  className=" text-[14px] font-medium text-textColor hover:text-blue-600"
+                >
+                  Home
+                </a>
+              </li>
+              <li aria-current="page">
+                <a href="#" className=" text-[14px] font-medium text-textColor">
+                  / Dashboards
+                </a>
+              </li>
+              <li aria-current="page">
+                <a href="#" className=" text-[14px] font-medium">
+                  <span className="text-textColor">/</span>{" "}
+                  <span className="text-black">Projects</span>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
       <div className="bg-white mb-5 p-6 rounded-lg grid grid-cols-1 md:grid-cols-1 lg:grid-cols-6  ">
+        
         <div className="col-span-1 md:col-span-1  ">
           <div className="relative w-36 h-36  ">
-            <img src={p1} className="w-36 h-36 rounded-xl " alt="" />
+            <img src={person} className="w-36 h-36 rounded-xl " alt="" />
             <div className="w-4 h-4 absolute top-24 -right-2    bg-green-500 rounded-full"></div>
           </div>
         </div>
@@ -220,7 +255,7 @@ const Profile = () => {
       </div>
         <div className="py-8">
         <div className="grid grid-cols-1 mb-5 xl:grid-cols-3">
-        <div className="col-span-1 xl:col-span-2">1</div>
+        <div className="col-span-1 xl:col-span-2"><ProfileChart/></div>
         <div className="col-span-1 xl:col-span-1 rounded-lg bg-white p-6 text-center">
           <div>
             <h1 className="mb-2 font-semibold text-2xl">Kickstart</h1>
@@ -411,9 +446,7 @@ const Profile = () => {
                 </tr>
               </thead>
               {items.map((item) => (
-                <>
                   <ProductTable key={item.id} item={item} />
-                </>
               ))}
             </table>
           </div>

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import logo from "../assets/icons/logo-default.svg";
 import { CgProfile } from "react-icons/cg";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
-const Side = () => {
+const Side = ({num}) => {
+  const [active,setActive] = useState(num)
+
+console.log(active)
   return (
     <div className="flex flex-row md:flex-col justify-between z-20 cursor-pointer">
       <button
@@ -88,7 +91,7 @@ const Side = () => {
             </NavLink>
             <li>
               <div className="rounded-none ">
-                <h2 className="text-textColor flex hover:text-primary transition-all duration-200 items-center justify-between w-full  p-2 text-base hover:bg-gray-100">
+                <h2 className={`${active === '1' || active === '2' ? 'text-primary' : 'text-textColor'} flex hover:text-primary transition-all duration-200 items-center justify-between w-full  p-2 text-base hover:bg-gray-100`}>
                   <a className="flex items-center">
                     <svg
                       width="24"
@@ -111,14 +114,15 @@ const Side = () => {
                   </a>
                 </h2>
                 <ul className="px-3 py-2">
-                  <li>
-                    <a className="flex items-center p-2 text-textColor hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100">
+                  <NavLink to={`/detail/${1}`} onClick={() => click(num)}>
+                    <li className={`flex  items-center p-2 ${active === '1' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
                       &bull;
                       <span className="ml-3  text-base">View Project</span>
-                    </a>
-                  </li>
-                  <NavLink to={"/create"}>
-                    <li className="flex items-center p-2 text-textColor hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100">
+                    </li>
+                  </NavLink>
+
+                  <NavLink to={`/create/${2}`} onClick={() => click(num)}>
+                    <li   className={`flex  items-center p-2 ${active === '2' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
                       &bull;
                       <span className="ml-3  text-base">Create Project</span>
                     </li>
@@ -127,8 +131,8 @@ const Side = () => {
               </div>
             </li>
 
-            <NavLink to={"/user"}>
-              <li className="flex items-center p-2 duration-200 transition-all text-textColor hover:text-primary rounded-lg hover:bg-gray-100">
+            <NavLink to={`/user/${3}`} onClick={() => click(num)}>
+              <li  className={`flex  items-center p-2 ${active === '3' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
                 <svg
                   width="24"
                   height="24"
@@ -154,9 +158,9 @@ const Side = () => {
               </li>
             </NavLink>
 
-            <NavLink to={"/profile"}>
+            <NavLink to={`/profile/${4}`} onClick={() =>  click(num)}>
               <li>
-                <p className="flex items-center p-2 duration-200 transition-all text-textColor hover:text-primary rounded-lg hover:bg-gray-100">
+                <p className={`flex  items-center p-2 ${active === '4' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
                   <CgProfile className="w-[24px] h-[24px]" />
                   <span className="ml-3  text-base">Profile</span>
                 </p>

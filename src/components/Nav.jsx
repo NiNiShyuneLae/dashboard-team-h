@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import person from "../assets/images/person.jpg";
 import "./Nav.css";
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
+  const nav = useNavigate()
   const [show, setShow] = useState(false);
   const [btnShow, setBtnShow] = useState(false);
   const focusHandler = () => {
@@ -811,20 +813,20 @@ const Nav = () => {
                 </div>
                 <hr />
                 <ul
-                  className="py-2 font-medium text-base"
+                  className="py-2 font-medium text-base cursor-pointer"
                   aria-labelledby="user-menu-button"
                 >
-                  <li>
+                  <li onClick={() => nav('/profile')}>
                     <a
-                      href="#"
+                      
                       className="block px-4 py-2  text-gray-800 hover:text-primary transition-all duration-200"
                     >
                       My Profile
                     </a>
                   </li>
-                  <li>
+                  <li onClick={() => nav('/')}>
                     <a
-                      href="#"
+                      
                       className="block px-4 py-2  text-gray-800 hover:text-primary transition-all duration-200"
                     >
                       My Project

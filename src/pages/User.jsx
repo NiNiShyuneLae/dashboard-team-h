@@ -7,14 +7,16 @@ import {FiMenu} from "react-icons/fi"
 import UserCard from '../components/UserCard'
 import UserTable from '../components/UserTable'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const User = () => {
+    const nav = useNavigate()
     const users = [
         {
             "id": 1,
-            "name": "Mg Mg",
+            "name": "Karina Clark",
             "gamil": "mgmg@gmail.com",
-            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-6.jpg",
+            "image": "https://preview.keenthemes.com/craft/assets/media//avatars/300-2.jpg",
             "positon": "backend Developer",
             "earning": "$20,000",
             "tasks": 30,
@@ -25,9 +27,9 @@ const User = () => {
         },
         {
             "id": 2,
-            "name": "Ma ma",
+            "name": "Alan Johnson",
             "gamil": "mama@gmail.com",
-            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-1.jpg",
+            "image": "https://preview.keenthemes.com/craft/assets/media//avatars/300-1.jpg",
             "positon": "frontend Developer",
             "earning": "$20,000",
             "tasks": 20,
@@ -38,9 +40,9 @@ const User = () => {
         },
         {
             "id": 3,
-            "name": "Mg Mg",
+            "name": "Robert Doe",
             "gamil": "mgmg@gmail.com",
-            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-6.jpg",
+            "image": "https://preview.keenthemes.com/craft/assets/media//avatars/300-14.jpg",
             "positon": "Java Developer",
             "earning": "$20,000",
             "tasks": 27,
@@ -51,9 +53,9 @@ const User = () => {
         },
         {
             "id": 4,
-            "name": "Mg Mg",
+            "name": "Olivia Wild",
             "gamil": "mgmg@gmail.com",
-            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-5.jpg",
+            "image": "https://preview.keenthemes.com/craft/assets/media//avatars/300-6.jpg",
             "positon": "flutter Developer",
             "earning": "$20,000",
             "tasks": 47,
@@ -64,9 +66,9 @@ const User = () => {
         },
         {
             "id": 5,
-            "name": "Mg Mg",
+            "name": "Benjamin Jacob",
             "gamil": "mgmg@gmail.com",
-            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-6.jpg",
+            "image": "https://preview.keenthemes.com/craft/assets/media//avatars/300-12.jpg",
             "positon": "backend Developer",
             "earning": "$20,000",
             "tasks": 30,
@@ -77,9 +79,9 @@ const User = () => {
         },
         {
             "id": 6,
-            "name": "Mg Mg",
+            "name": "Sean Bean",
             "gamil": "mgmg@gmail.com",
-            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-6.jpg",
+            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-5.jpg",
             "positon": "backend Developer",
             "earning": "$20,000",
             "tasks": 30,
@@ -90,9 +92,9 @@ const User = () => {
         },
         {
             "id": 7,
-            "name": "Ma ma",
+            "name": "Francis Mitcham",
             "gamil": "mama@gmail.com",
-            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-1.jpg",
+            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-9.jpg",
             "positon": "frontend Developer",
             "earning": "$20,000",
             "tasks": 20,
@@ -103,9 +105,9 @@ const User = () => {
         },
         {
             "id": 8,
-            "name": "Mg Mg",
+            "name": "Dylan",
             "gamil": "mgmg@gmail.com",
-            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-6.jpg",
+            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-23.jpg",
             "positon": "Java Developer",
             "earning": "$20,000",
             "tasks": 27,
@@ -116,9 +118,9 @@ const User = () => {
         },
         {
             "id": 9,
-            "name": "Mg Mg",
+            "name": "Michelle",
             "gamil": "mgmg@gmail.com",
-            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-5.jpg",
+            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-7.jpg",
             "positon": "flutter Developer",
             "earning": "$20,000",
             "tasks": 47,
@@ -129,9 +131,9 @@ const User = () => {
         },
         {
             "id": 10,
-            "name": "Mg Mg",
+            "name": "Michael",
             "gamil": "mgmg@gmail.com",
-            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-6.jpg",
+            "image": "https://preview.keenthemes.com/craft/assets/media/avatars/300-11.jpg",
             "positon": "backend Developer",
             "earning": "$20,000",
             "tasks": 30,
@@ -414,7 +416,7 @@ const User = () => {
             aria-label="Breadcrumb"
           >
             <ol className="inline-flex items-center mb-3 space-x-1 sm:mb-0">
-              <li>
+              <li onClick={() => nav('/')}>
                 <a
                   href="#"
                   className=" text-[14px] font-medium text-textColor hover:text-blue-600"
