@@ -5,6 +5,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 
 const Side = ({num}) => {
   const [active,setActive] = useState(num)
+  const nav = useNavigate()
 
 console.log(active)
   return (
@@ -41,8 +42,7 @@ console.log(active)
             <img src={logo} className="max-h-12 mr-3" />
           </a>
           <ul className="space-y-2 font-medium">
-            <NavLink to={"/"}>
-              <li className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 ">
+              <li onClick={() => nav('/')} className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 ">
                 <svg
                   width="24"
                   height="24"
@@ -88,7 +88,6 @@ console.log(active)
                 </svg>
                 <span className="ml-3 text-primary text-base">Dashboards</span>
               </li>
-            </NavLink>
             <li>
               <div className="rounded-none ">
                 <h2 className={`${active === '1' || active === '2' ? 'text-primary' : 'text-textColor'} flex hover:text-primary transition-all duration-200 items-center justify-between w-full  p-2 text-base hover:bg-gray-100`}>
@@ -114,25 +113,30 @@ console.log(active)
                   </a>
                 </h2>
                 <ul className="px-3 py-2">
-                  <NavLink to={`/detail/${1}`} onClick={() => click(num)}>
-                    <li className={`flex  items-center p-2 ${active === '1' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
+                    <li onClick={() => {
+                      nav(`/detail/${1}`)
+                      click(num)
+                    }} className={`flex  items-center p-2 ${active === '1' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
                       &bull;
                       <span className="ml-3  text-base">View Project</span>
                     </li>
-                  </NavLink>
 
-                  <NavLink to={`/create/${2}`} onClick={() => click(num)}>
-                    <li   className={`flex  items-center p-2 ${active === '2' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
+                 
+                    <li  onClick={() =>{
+                      nav(`/create/${2}`)
+                      click(num)
+                    }} className={`flex  items-center p-2 ${active === '2' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
                       &bull;
                       <span className="ml-3  text-base">Create Project</span>
                     </li>
-                  </NavLink>
                 </ul>
               </div>
             </li>
 
-            <NavLink to={`/user/${3}`} onClick={() => click(num)}>
-              <li  className={`flex  items-center p-2 ${active === '3' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
+              <li onClick={() => {
+                nav(`/user/${3}`)
+                click(num)
+              }} className={`flex  items-center p-2 ${active === '3' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
                 <svg
                   width="24"
                   height="24"
@@ -156,16 +160,16 @@ console.log(active)
                 </svg>
                 <span className="ml-3  text-base">Users</span>
               </li>
-            </NavLink>
 
-            <NavLink to={`/profile/${4}`} onClick={() =>  click(num)}>
-              <li>
+              <li onClick={() =>  {
+                nav(`/profile/${4}`)
+                click(num)
+              }}>
                 <p className={`flex  items-center p-2 ${active === '4' ? 'text-primary' : 'text-textColor'} hover:text-primary transition-all duration-200 rounded-lg  hover:bg-gray-100`}>
                   <CgProfile className="w-[24px] h-[24px]" />
                   <span className="ml-3  text-base">Profile</span>
                 </p>
               </li>
-            </NavLink>
           </ul>
         </div>
       </aside>
