@@ -794,7 +794,7 @@ const Nav = () => {
                 />
               </button>
               <div
-                className="z-50  hidden absolute top-0 left-0 lg:right-[82%] py-3 my-4 text-base shadow-lg  list-none bg-white divide-y divide-gray-100 rounded-lg"
+                className="z-50  hidden absolute top-0 left-0 lg:right-[75%] py-3 my-4 text-base shadow-lg  list-none bg-white divide-y divide-gray-100 rounded-lg"
                 id="dropdownHover"
               >
                 <div className="px-4 py-5 cursor-pointer flex items-center gap-4 ">
