@@ -31,7 +31,7 @@ const Profile = () => {
       qty: 0,
     },
     {
-      id: "#XGY-356	",
+      id: "#XGY-357	",
       name: "Dell 32 UltraSharp",
       date: "22 Dec, 2023	",
       price: 1060,
@@ -39,7 +39,7 @@ const Profile = () => {
       qty: 8,
     },
     {
-      id: "#XGY-356",
+      id: "#XGY-358",
       name: "Macbook Air M1",
       date: "02 Apr, 2023",
       price: 1230,
@@ -47,7 +47,7 @@ const Profile = () => {
       qty: 58,
     },
     {
-      id: "#YHD-047	",
+      id: "#YHD-049	",
       name: "Surface Laptop 4",
       date: "01 Apr, 2023	",
       price: 1060,
@@ -55,7 +55,7 @@ const Profile = () => {
       qty: 0,
     },
     {
-      id: "#XGY-356	",
+      id: "#XGY-351	",
       name: "Dell 32 UltraSharp",
       date: "22 Dec, 2023	",
       price: 1060,
@@ -63,7 +63,7 @@ const Profile = () => {
       qty: 8,
     },
     {
-      id: "#XGY-356	",
+      id: "#XGY-350	",
       name: "Dell 32 UltraSharp",
       date: "22 Dec, 2023	",
       price: 1060,
@@ -74,7 +74,7 @@ const Profile = () => {
   return (
     <section className="profile lg:px-[32px] px-[20px] cursor-pointer">
             <div className="">
-        <p className=" text-[1.25rem] font-semibold">Projects</p>
+        <p className=" text-[1.25rem] font-semibold text-white">Projects</p>
         <div>
           <nav
             className="justify-between  pb-3 text-gray-700  sm:flex  bg-gray-5"
@@ -97,14 +97,14 @@ const Profile = () => {
               <li aria-current="page">
                 <a href="#" className=" text-[14px] font-medium">
                   <span className="text-textColor">/</span>{" "}
-                  <span className="text-black">Projects</span>
+                  <span className="text-primary">Projects</span>
                 </a>
               </li>
             </ol>
           </nav>
         </div>
       </div>
-      <div className="bg-white mb-5 p-6 rounded-lg grid grid-cols-1 md:grid-cols-1 lg:grid-cols-6  ">
+      <div className="bg-cardColor mb-5 p-6 rounded-lg grid grid-cols-1 md:grid-cols-1 lg:grid-cols-6  ">
         
         <div className="col-span-1 md:col-span-1  ">
           <div className="relative w-36 h-36  ">
@@ -116,7 +116,7 @@ const Profile = () => {
           <div className="md:flex md:items-center md:justify-between">
             <div className="my-5 md:my-2">
               <div className="flex items-center  gap-3 mb-3">
-                <span className="font-semibold text-xl text-gray-800 hover:text-blue-500 cursor-pointer">
+                <span className="font-semibold text-xl text-white hover:text-blue-500 cursor-pointer">
                   Max Smith
                 </span>
                 <button className="p-1 bg-blue-400 rounded-full   border-dotted">
@@ -149,34 +149,34 @@ const Profile = () => {
             </div>
 
             <div>
-              <button className="bg-gray-100 px-4 py-2 text-xs font-textColor font-medium hover:bg-gray-200 text-textColor rounded-lg mr-3">
+              <button className="bg-gray-100 px-4 py-2 text-xs  font-medium hover:bg-gray-200 text-secondary rounded-lg mr-3">
                 Follow
               </button>
 
-              <button className="bg-blue-400 px-4 py-2 text-xs font-textColor font-medium hover:bg-blue-600 text-white rounded-lg">
+              <button className="bg-primary px-4 py-2 text-xs  font-medium  text-white rounded-lg">
                 Hire Me
               </button>
             </div>
           </div>
           <div className="md:flex  md:items-center md:gap-3">
-            <div className="border px-3 mb-3 py-2 border-dotted w-36">
+            <div className="border rounded-lg border-primary px-3 mb-3 py-2 border-dashed w-36">
               <div className="flex items-center  mb-2">
                 <BsArrowUpShort className="text-green-500 text-2xl " />
-                <span className="font-semibold text-lg  ">$4,000</span>
+                <span className="font-semibold text-lg  text-white">$4,000</span>
               </div>
               <h1 className="text-textColor text-sm font-semibold">Earnings</h1>
             </div>
-            <div className="border px-3 py-2 mb-3 border-dotted w-36">
+            <div className="border rounded-lg border-primary px-3 py-2 mb-3 border-dashed w-36">
               <div className="flex items-center  mb-2">
                 <BsArrowDownShort className="text-red-500 text-2xl " />
-                <span className="font-semibold text-lg  ">75</span>
+                <span className="font-semibold text-lg  text-white">75</span>
               </div>
               <h1 className="text-textColor text-sm font-semibold">Projects</h1>
             </div>
-            <div className="border px-3 py-2 mb-3 border-dotted w-36">
+            <div className="border rounded-lg border-primary px-3 py-2 mb-3 border-dashed w-36">
               <div className="flex items-center  mb-2">
                 <BsArrowUpShort className="text-green-500 text-2xl " />
-                <span className="font-semibold text-lg  ">%60</span>
+                <span className="font-semibold text-lg  text-white">%60</span>
               </div>
               <h1 className="text-textColor text-sm font-semibold">
                 Success Rate
@@ -186,7 +186,7 @@ const Profile = () => {
           <div className="w-72">
             <div className="flex items-center justify-between text-sm text-textColor mb-2">
               <h1>Profile Compleation</h1>
-              <h1 className="font-semibold text-black">50%</h1>
+              <h1 className="font-semibold text-textColor">50%</h1>
             </div>
             <div className="bg-gray-200 w-72 h-1 rounded-lg">
               <div className="h-1 bg-green-500 w-1/2 rounded-lg"></div>
@@ -194,46 +194,46 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white mb-5  rounded-lg">
+      <div className="bg-cardColor mb-5  rounded-lg">
         <div className="flex p-6 items-center justify-between ">
-          <h1 className="text-lg font-semibold ">Profile Details</h1>
-          <button className="bg-blue-400 px-4 py-2 text-xs font-textColor font-medium hover:bg-blue-600 text-white rounded-lg">
+          <h1 className="text-lg font-semibold text-white">Profile Details</h1>
+          <button className="bg-primary px-4 py-2 text-xs font-textColor font-medium  text-white rounded-lg">
             Edit Profile
           </button>
         </div>
-        <hr />
+        
         <div className="p-6 w-3/4">
           <div className="lg:grid mb-6 lg:grid-cols-2  text-sm ">
-            <h1 className="text-gray-400 font-medium ">Full Name</h1>
-            <h1 className="text-gray-800 font-semibold text-left ">
+            <h1 className="text-textColor font-medium ">Full Name</h1>
+            <h1 className="text-textColor font-semibold text-left ">
               Max Smith
             </h1>
           </div>
           <div className="lg:grid mb-6 lg:grid-cols-2 text-sm ">
-            <h1 className="text-gray-400 font-medium ">Company</h1>
-            <h1 className="text-gray-800 font-semibold text-left ">
+            <h1 className="text-textColor font-medium ">Company</h1>
+            <h1 className="text-textColor font-semibold text-left ">
               Keenthemes
             </h1>
           </div>
           <div className="lg:grid mb-6 lg:grid-cols-2 text-sm ">
-            <h1 className="text-gray-400 font-medium ">Contact Phone</h1>
-            <h1 className="text-gray-800 font-semibold ">044 3276 454 935</h1>
+            <h1 className="text-textColor font-medium ">Contact Phone</h1>
+            <h1 className="text-textColor font-semibold ">044 3276 454 935</h1>
           </div>
           <div className="lg:grid mb-6 lg:grid-cols-2 text-sm ">
-            <h1 className="text-gray-400 font-medium ">Company Site</h1>
-            <h1 className="text-gray-800 font-semibold ">keenthemes.com</h1>
+            <h1 className="text-textColor font-medium ">Company Site</h1>
+            <h1 className="text-textColor font-semibold ">keenthemes.com</h1>
           </div>
           <div className="lg:grid mb-6 lg:grid-cols-2 text-sm ">
-            <h1 className="text-gray-400 font-medium ">Country</h1>
-            <h1 className="text-gray-800 font-semibold ">Germany</h1>
+            <h1 className="text-textColor font-medium ">Country</h1>
+            <h1 className="text-textColor font-semibold ">Germany</h1>
           </div>
           <div className="lg:grid mb-6 lg:grid-cols-2 text-sm ">
-            <h1 className="text-gray-400 font-medium ">Communication</h1>
-            <h1 className="text-gray-800 font-semibold ">Email, Phone</h1>
+            <h1 className="text-textColor font-medium ">Communication</h1>
+            <h1 className="text-textColor font-semibold ">Email, Phone</h1>
           </div>
           <div className="lg:grid mb-6 lg:grid-cols-2 text-sm ">
-            <h1 className="text-gray-400 font-medium ">Allow Changes</h1>
-            <h1 className="text-gray-800 font-semibold ">Yes</h1>
+            <h1 className="text-textColor font-medium ">Allow Changes</h1>
+            <h1 className="text-textColor font-semibold ">Yes</h1>
           </div>
         </div>
         <div className="px-6 pb-6">
@@ -254,17 +254,17 @@ const Profile = () => {
         </div>
       </div>
         <div className="py-8">
-        <div className="grid grid-cols-1 mb-5 xl:grid-cols-3">
+        <div className="grid grid-cols-1 mb-5 xl:grid-cols-3 gap-5 ">
         <div className="col-span-1 xl:col-span-2"><ProfileChart/></div>
-        <div className="col-span-1 xl:col-span-1 rounded-lg bg-white p-6 text-center">
+        <div className="col-span-1 xl:col-span-1 rounded-lg bg-cardColor p-6 text-center">
           <div>
-            <h1 className="mb-2 font-semibold text-2xl">Kickstart</h1>
-            <h1 className="mb-4 font-bold text-2xl">Mobile Application</h1>
-            <p className="mb-4  text-gray-700  font-medium">
+            <h1 className="mb-2 font-semibold text-2xl text-white">Kickstart</h1>
+            <h1 className="mb-4 font-bold text-2xl text-primary">Mobile Application</h1>
+            <p className="mb-4  text-textColor  font-medium">
               Outlines keep you honest. They stoping you from amazing poorly
               about drive
             </p>
-            <button className="bg-blue-500 px-5 py-3  font-textColor font-medium hover:bg-blue-600 text-white rounded-lg">
+            <button className="bg-primary px-5 py-3  font-textColor font-medium  text-white rounded-lg">
               Create App
             </button>
             <div>
@@ -278,12 +278,12 @@ const Profile = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-5">
-        <div className="col-span-1 xl:col-span-1 mb-5 xl:mb-0 rounded-lg bg-white p-6">
-          <h1 className="text-xl font-bold">Projects Contributions</h1>
-          <h1 className="text-textColor mb-4 text-sm font-semibold">
+        <div className="col-span-1 xl:col-span-1 mb-5 xl:mb-0 rounded-lg bg-cardColor p-6">
+          <h1 className="text-xl font-bold text-white">Projects Contributions</h1>
+          <h1 className="text-primary mb-4 text-sm font-semibold">
             84 New Tasks & 29 Guides
           </h1>
-          <div className="flex items-center justify-between p-3 rounded-lg hover:outline hover:outline-1 outline-gray-300 mb-2">
+          <div className="flex items-center justify-between p-3 rounded-lg   mb-2">
             <div className="flex items-center gap-5">
               <div>
                 <img
@@ -294,7 +294,7 @@ const Profile = () => {
               </div>
 
               <div>
-                <h1 className="font-bold text-gray-800 cursor-pointer hover:text-blue-600">
+                <h1 className="font-bold text-white cursor-pointer ">
                   Piper Aerostar
                 </h1>
                 <h1 className="text-textColor text-sm font-semibold cursor-pointer">
@@ -303,12 +303,12 @@ const Profile = () => {
               </div>
             </div>
             <div>
-              <button className="px-3 py-1 rounded-lg bg-gray-200 text-textColor font-semibold hover:bg-blue-500 hover:text-white">
+              <button className="px-3 py-1 rounded-lg bg-gray-200 text-secondary font-semibold ">
                 0
               </button>
             </div>
           </div>
-          <div className="flex items-center justify-between p-3 rounded-lg hover:outline hover:outline-1 outline-gray-300 mb-2">
+          <div className="flex items-center justify-between p-3 rounded-lg outline-gray-300 mb-2">
             <div className="flex items-center gap-5">
               <div>
                 <img
@@ -319,7 +319,7 @@ const Profile = () => {
               </div>
 
               <div>
-                <h1 className="font-bold text-gray-800 cursor-pointer hover:text-blue-600">
+                <h1 className="font-bold text-white cursor-pointer">
                   Cirrus SR22
                 </h1>
                 <h1 className="text-textColor text-sm font-semibold cursor-pointer">
@@ -328,12 +328,12 @@ const Profile = () => {
               </div>
             </div>
             <div>
-              <button className="px-3 py-1 rounded-lg bg-gray-200 text-textColor font-semibold hover:bg-blue-500 hover:text-white">
+              <button className="px-3 py-1 rounded-lg bg-gray-200 text-secondary font-semibold ">
                 0
               </button>
             </div>
           </div>
-          <div className="flex items-center justify-between p-3 rounded-lg hover:outline hover:outline-1 outline-gray-300 mb-2">
+          <div className="flex items-center justify-between p-3 rounded-lg  outline-gray-300 mb-2">
             <div className="flex items-center gap-5">
               <div>
                 <img
@@ -344,7 +344,7 @@ const Profile = () => {
               </div>
 
               <div>
-                <h1 className="font-bold text-gray-800 cursor-pointer hover:text-blue-600">
+                <h1 className="font-bold text-white cursor-pointer ">
                   Beachcraft Baron
                 </h1>
                 <h1 className="text-textColor text-sm font-semibold cursor-pointer">
@@ -353,12 +353,12 @@ const Profile = () => {
               </div>
             </div>
             <div>
-              <button className="px-3 py-1 rounded-lg bg-gray-200 text-textColor font-semibold hover:bg-blue-500 hover:text-white">
+              <button className="px-3 py-1 rounded-lg bg-gray-200 text-secondary font-semibold">
                 0
               </button>
             </div>
           </div>
-          <div className="flex items-center justify-between p-3 rounded-lg hover:outline hover:outline-1 outline-gray-300 mb-2">
+          <div className="flex items-center justify-between p-3 rounded-lg  outline-gray-300 mb-2">
             <div className="flex items-center gap-5">
               <div>
                 <img
@@ -369,7 +369,7 @@ const Profile = () => {
               </div>
 
               <div>
-                <h1 className="font-bold text-gray-800 cursor-pointer hover:text-blue-600">
+                <h1 className="font-bold text-white cursor-pointer ">
                   Cessna SF150
                 </h1>
                 <h1 className="text-textColor text-sm font-semibold cursor-pointer">
@@ -378,13 +378,13 @@ const Profile = () => {
               </div>
             </div>
             <div>
-              <button className="px-3 py-1 rounded-lg bg-gray-200 text-textColor font-semibold hover:bg-blue-500 hover:text-white">
+              <button className="px-3 py-1 rounded-lg bg-gray-200 text-secondary font-semibold ">
                 0
               </button>
             </div>
           </div>
-          <div className="p-6 outline-1 outline-blue-300 outline-dashed bg-blue-50 rounded-lg font-semibold text-gray-500">
-            <span className="text-blue-400">
+          <div className="p-6 outline-1 outline-primary outline-dashed bg-cardColor rounded-lg font-semibold text-textColor">
+            <span className="text-primary">
               {" "}
               Intive New .NET Collaborators
             </span>{" "}
@@ -392,38 +392,38 @@ const Profile = () => {
             class outstanding scripts
           </div>
         </div>
-        <div className="col-span-1 xl:col-span-2 rounded-lg bg-white p-6 ">
+        <div className="col-span-1 xl:col-span-2 rounded-lg bg-cardColor p-6 ">
           <div className="sm:flex sm:items-center sm:justify-between mb-5">
             <div>
-              <h1 className="text-gray-800 font-semibold">Stock Report</h1>
-              <h1 className="text-sm font-semibold text-textColor ">
+              <h1 className="text-white font-semibold">Stock Report</h1>
+              <h1 className="text-sm font-semibold text-primary ">
                 Total 2,356 Items in the Stock
               </h1>
             </div>
             <div className="md:flex md:items-center md:gap-4">
-              <h1 className="text-xs font-bold text-gray-500">Category</h1>
-              <select className="text-xs font-bold outline-none text-gray-500">
-                <option value="" className="py-2">
+              <h1 className="text-xs font-bold text-textColor">Category</h1>
+              <select className="text-xs font-bold outline-none rounded-sm p-1 text-white bg-primary">
+                <option value="" className="">
                   Show All
                 </option>
                 <option value="">Category A</option>
                 <option value="">Category B</option>
               </select>
-              <h1 className="text-xs font-bold text-gray-500">Status</h1>
-              <select className="text-xs font-bold text-gray-500 outline-none">
+              <h1 className="text-xs font-bold text-textColor">Status</h1>
+              <select className="text-xs font-bold rounded-sm p-1 text-white bg-primary outline-none">
                 <option value="">Show All</option>
                 <option value="">In Stock</option>
                 <option value="">Out of Stock</option>
                 <option value="">Low Stock</option>
               </select>
-              <button className="text-xs font-bold text-gray-500 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg">
+              <button className="text-xs font-bold text-white px-4 py-2 bg-primary  rounded-lg">
                 View Stock
               </button>
             </div>
           </div>
-          <div className=" rounded-2xl overflow-x-auto  shadow-lg ">
-            <table className="w-full  text-sm text-left  dark:text-gray-400">
-              <thead className="text-xs text-textColor uppercase bg-gray-50 ">
+          <div className="  overflow-x-auto ">
+            <table className="w-full  text-sm text-left  ">
+              <thead className="text-xs text-white uppercase  ">
                 <tr>
                   <th scope="col" className="px-6 py-3">
                     Items

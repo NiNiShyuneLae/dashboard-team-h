@@ -1,17 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Oswald:wght@400;600&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@media (max-width: 992px) {
-    html,
-    body {
-      width: 100%;
-      overflow-x: hidden;
-    }
-  }
-
-  .btn-animation {
+.btn-animation {
     position: relative;
     padding: 13px 30px;
     color: #000;
@@ -19,8 +6,6 @@
     cursor: pointer;
     border: 1px solid #b19777;
     z-index: 1;
-    border-radius: 3px;
-
   }
   
   .btn-animation::before {
@@ -40,7 +25,6 @@
   .btn-animation:hover {
     color: white;
     border: 1px solid #b19777;
-    border-radius: 3px;
   }
   
   .btn-animation:hover::before {
@@ -48,3 +32,9 @@
     right: 0;
     left: auto;
   }
+  
+.bg{
+    background-image: url('../assets//images/urbanHouse.jpg');
+    background-size: cover;
+    background-position: bottom right;
+}

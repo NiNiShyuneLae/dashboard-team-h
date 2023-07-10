@@ -19,9 +19,9 @@ const Nav = () => {
     setBtnShow(true);
   };
   return (
-    <div className=" py-[10px] h-[60px] bg-white w-full">
+    <div className=" py-4 bg-secondary px-4  w-full">
       <nav className=" border-gray-200">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pe-10">
+        <div className=" flex flex-wrap   justify-between mx-auto">
           <div className="flex md:order-2">
             <button
               type="button"
@@ -308,7 +308,7 @@ const Nav = () => {
               </ul>
             </div>
 
-            <div className="relative hidden md:block">
+            <div className="relative hidden md:block ">
               <div className="relative ">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                   <svg
@@ -328,7 +328,7 @@ const Nav = () => {
                 </div>
                 <input
                   type="text"
-                  className="block  py-[10px] ps-[42px] pe-[13px] text-sm text-gray-900  rounded-lg bg-gray-50 focus:outline-none"
+                  className="block  py-[10px] ps-[42px] pe-[13px] text-sm text-gray-900  rounded-lg bg-cardColor focus:outline-none"
                   placeholder="Search..."
                   onFocus={() => focusHandler()}
                   onBlur={() => blurHandler()}
@@ -656,7 +656,7 @@ const Nav = () => {
                 </svg>
               </button>
               <div
-                className="z-50 hidden absolute top-0 left-0 right-0 mx-auto lg:right-[68%] py-3 my-4 text-base shadow-lg  list-none bg-white divide-y divide-gray-100 rounded-lg"
+                className="z-50 hidden absolute top-0 left-0 right-0 mx-auto lg:right-[68%] pb-3 my-4 text-base shadow-lg  list-none bg-white divide-y divide-gray-100 rounded-lg"
                 id="btnhover"
               >
                 <div className="noti-bg w-[360px] h-[110px] rounded-t relative">
@@ -816,7 +816,7 @@ const Nav = () => {
                   className="py-2 font-medium text-base cursor-pointer"
                   aria-labelledby="user-menu-button"
                 >
-                  <li onClick={() => nav('/profile')}>
+                  <li onClick={() => nav('/profile/4')}>
                     <a
                       
                       className="block px-4 py-2  text-gray-800 hover:text-primary transition-all duration-200"
@@ -824,7 +824,7 @@ const Nav = () => {
                       My Profile
                     </a>
                   </li>
-                  <li onClick={() => nav('/')}>
+                  <li onClick={() => nav('/detail/1')}>
                     <a
                       
                       className="block px-4 py-2  text-gray-800 hover:text-primary transition-all duration-200"
@@ -835,7 +835,7 @@ const Nav = () => {
 
                   <li>
                     <a
-                      href="#"
+                      onClick={() => nav('/signin')}
                       className="block px-4 py-2  text-gray-800 hover:text-primary transition-all duration-200"
                     >
                       Sign out

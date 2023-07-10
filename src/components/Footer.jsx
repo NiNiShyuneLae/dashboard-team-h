@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="py-4 lg:px-[32px] px-[20px] flex items-center justify-between flex-col md:flex-row">
       <div className="text-[15px]">
         <span className="text-[#A1A5B7] font-normal ">2023©</span>
-        <span className="text-[#3F4254] cursor-pointer hover:text-primary transition-all duration-150">
+        <span className="text-[#A1A5B7] cursor-pointer hover:text-primary transition-all duration-150">
           Keenthemes
         </span>
       </div>

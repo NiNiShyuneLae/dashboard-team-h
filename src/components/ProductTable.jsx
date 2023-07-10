@@ -3,11 +3,11 @@ import React from "react";
 const ProductTable = ({ item }) => {
   return (
     <>
-      <tbody>
-        <tr className="bg-white border-b  ">
+      <tbody >
+        <tr className=" text-textColor ">
           <th
             scope="row"
-            className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+            className="px-6 py-4 font-medium  whitespace-nowrap "
           >
             <div className="">
               <h1>{item.name}</h1>
@@ -16,9 +16,9 @@ const ProductTable = ({ item }) => {
           <td className="px-6 py-4 font-semibold">{item.id}</td>
           <td className="px-6 py-4 font-semibold">{item.date}</td>
           <td className={`px-6 py-4 text-center`}>${item.price}</td>
-          <td className="px-6 py-4 text-right ">
+          <td className="px-6 py-4  ">
             <button
-              className={`bg-gray-100 px-4 py-2 text-xs font-textColor font-medium hover:bg-gray-200 text-textColor rounded-lg `}
+              className={`bg-secondary px-4 py-2 text-xs  rounded-lg `}
             >
               {item.status}
             </button>

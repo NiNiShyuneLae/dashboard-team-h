@@ -18,9 +18,13 @@ export default {
       },
       fontFamily: {
         'Inter': 'Inter',
+        'Oswald':'Oswald',
       },
       colors: {
-        primary: '#00A3FF',
+        // primary: '#00A3FF',
+        primary : '#b19777',
+        cardColor : '#323232',
+        secondary : '#272727',
         dashboardTextColor: '#E8E8ED',
         textColor: '#B8B5C3',
       }

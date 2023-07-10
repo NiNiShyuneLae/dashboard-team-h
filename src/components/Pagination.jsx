@@ -2,8 +2,8 @@ import React from "react";
 
 const Pagination = () => {
   return (
-    <div className="py-8 flex items-center justify-between flex-col md:flex-row gap-2 md:gap-0">
-      <div className="text-[#5E6278] text-[1.075rem] font-medium">Showing 1 to 10 of 50 entries</div>
+    <div className="py-8  flex items-center justify-between flex-col md:flex-row gap-2 md:gap-0">
+      <div className="text-[#A1A5B7]  text-[1.075rem] font-medium">Showing 1 to 10 of 50 entries</div>
       <nav aria-label="Page navigation example">
         <ul className="inline-flex items-center space-x-2">
           <li>

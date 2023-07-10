@@ -22,7 +22,7 @@ const DashCard = () => {
   return (
     <div className="py-8 ">
       <div className="lg:px-[32px] px-[20px]">
-        <p className=" text-[1.25rem] font-semibold">Projects</p>
+        <p className=" text-[1.25rem] font-semibold text-white">Projects</p>
         <div>
           <nav
             className="justify-between  pb-3 text-gray-700  sm:flex  bg-gray-5"
@@ -45,7 +45,7 @@ const DashCard = () => {
               <li aria-current="page">
                 <a href="#" className=" text-[14px] font-medium">
                   <span className="text-textColor">/</span>{" "}
-                  <span className="text-black">Projects</span>
+                  <span className="text-primary">Projects</span>
                 </a>
               </li>
             </ol>
@@ -53,9 +53,9 @@ const DashCard = () => {
         </div>
       </div>
       <div className="grid  grid-cols-1 lg:grid-cols-2  2xl:grid-cols-3 px-[20px] lg:px-4 xl:px-8 gap-10 lg:gap-4 xl:gap-10">
-        <div className="col-span-1 p-8 bg-white shadow-sm rounded-lg">
-          <p className="text-[2.5rem] font-semibold">237</p>
-          <p className="text-gray-400 text-lg font-medium mb-6">
+        <div className="col-span-1 p-8 bg-cardColor shadow-sm rounded-lg">
+          <p className="text-[2.5rem] font-semibold text-white">237</p>
+          <p className="text-primary text-lg font-medium mb-6">
             Current Projects
           </p>
           <div className="flex items-center gap-7"  >
@@ -65,12 +65,12 @@ const DashCard = () => {
             <div className="flex  flex-col  gap-3">
               <div className="flex justify-between items-center gap-5">
                 <div className="flex items-center gap-4">
-                  <p className="px-[5px] py-[2.3px] rounded-md bg-primary"></p>
+                  <p className="px-[5px] py-[2.3px] rounded-md bg-[#00a3ff]"></p>
                   <p className="text-gray-400 font-medium text-[16px]">
                     Active
                   </p>
                 </div>
-                <p className="text-gray-700 font-medium text-[16px]">30</p>
+                <p className="text-gray-400 font-medium text-[16px]">30</p>
               </div>
               <div className="flex justify-between items-center gap-5">
                 <div className="flex items-center gap-4">
@@ -79,7 +79,7 @@ const DashCard = () => {
                     Completed
                   </p>
                 </div>
-                <p className="text-gray-700 font-medium text-[16px]">45</p>
+                <p className="text-gray-400 font-medium text-[16px]">45</p>
               </div>
               <div className="flex justify-between items-center gap-5">
                 <div className="flex items-center gap-4">
@@ -88,18 +88,18 @@ const DashCard = () => {
                     Yet to start
                   </p>
                 </div>
-                <p className="text-gray-700 font-medium text-[16px]">25</p>
+                <p className="text-gray-400 font-medium text-[16px]">25</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-span-1 p-8 bg-white shadow-sm rounded-lg">
-          <p className="text-[2.5rem] font-semibold">$3,290.00</p>
-          <p className="text-gray-400 text-lg font-medium mb-6">
+        <div className="col-span-1 p-8 bg-cardColor shadow-sm rounded-lg">
+          <p className="text-[2.5rem] font-semibold text-white">$3,290.00</p>
+          <p className=" text-lg font-medium mb-6 text-primary">
             Project Finance
           </p>
           <div className="flex  flex-col  gap-2">
-            <div className="flex font-medium justify-between  items-center pb-[13px] border-b-2 border-gray-200 border-dotted">
+            <div className="flex text-gray-400 font-medium justify-between  items-center pb-[13px] border-b-2 border-gray-400 border-dotted">
               <p>Avg. Project Budget</p>
               <div className="flex items-center">
                 <span className="svg-icon svg-icon-3 me-1 svg-icon-success">
@@ -125,7 +125,7 @@ const DashCard = () => {
                 $6,570
               </div>
             </div>
-            <div className="flex  font-medium  justify-between  items-center pb-[13px] border-b-2 border-gray-200 border-dotted">
+            <div className="flex  text-gray-400 font-medium  justify-between  items-center pb-[13px] border-b-2 border-gray-400 border-dotted">
               <p>Lowest Project Check</p>
               <div className="flex items-center">
                 <span className="svg-icon svg-icon-3 me-1 svg-icon-danger">
@@ -151,7 +151,7 @@ const DashCard = () => {
                 $408
               </div>
             </div>
-            <div className="flex  font-medium  justify-between  items-center pb-[13px]">
+            <div className="flex  text-gray-400 font-medium  justify-between  items-center pb-[13px]">
               <p>Ambassador Page</p>
               <div className="flex items-center">
                 <span className="svg-icon svg-icon-3 me-1 svg-icon-success">
@@ -179,10 +179,10 @@ const DashCard = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 p-8 bg-white shadow-sm rounded-lg">
+        <div className="col-span-1 p-8 bg-cardColor  shadow-sm rounded-lg">
           <div className="mb-[22px]">
-            <p className="text-[2.5rem] font-semibold">49</p>
-            <p className="text-gray-400 text-lg font-medium mb-6">
+            <p className="text-[2.5rem] font-semibold text-white">49</p>
+            <p className="text-primary text-lg font-medium mb-6">
               Our Clients
             </p>
           </div>
@@ -239,7 +239,7 @@ const DashCard = () => {
             </div>
           </div>
           <div>
-            <button className="bg-[#00a3ff] text-[16px] hover:bg-[#26b1ff]  transition-all duration-200 py-2 px-4 text-white rounded me-3">
+            <button className="bg-primary text-[16px]   transition-all duration-200 py-2 px-4 text-white rounded me-3">
               All Clients
             </button>
             <button className=" py-2 px-4 rounded text-[#7e8299] bg-[#f9f9f9]">

@@ -74,7 +74,7 @@ const Dashboard9 = () => {
               
     //       </div>
     // </div>
-    <div className="container flex flex-wrap bg-white rounded-lg py-7">
+    <div className="container flex flex-wrap bg-cardColor rounded-lg py-7">
     <div className="bg-[#F9F9F9] w-[100px] h-[100px] md:w-[150px]  md:h-[150px] flex justify-center rounded-lg">
       <img
         src="https://preview.keenthemes.com/craft/assets/media/svg/brand-logos/volicity-9.svg"
@@ -84,32 +84,32 @@ const Dashboard9 = () => {
     </div>
     <div className=" ms-5 mt-1">
       <div className="">
-        <h3 className=" text-xl font-bold inline-block">
+        <h3 className=" text-xl font-bold inline-block text-white">
           CRM Dashboard
         </h3>
         <span className="bg-[#E8FFF3] text-[#50CE93] text-xs font-medium px-2.5 py-0.5 ms-2 rounded-md">
           In Progress
         </span>
 
-        <p className=" text-textColor">
+        <p className=" text-primary">
           #1 Tool to get started with Web Apps any Kind & size
         </p>
       </div>
       <div className="flex lg:items-center flex-col lg:flex-row mt-5 mb-[30px] cursor-pointer justify-between gap-10">
         <div className=" flex flex-wrap gap-5 ">
-          <div className=" border border-dashed rounded-md p-2">
-            <h4 className=" text-base font-semibold">29 Jan, 2023</h4>
+          <div className=" border border-dashed border-primary rounded-md p-2">
+            <h4 className=" text-base font-semibold text-white">29 Jan, 2023</h4>
             <p className=" text-textColor text-sm">Due Date</p>
           </div>
-          <div className="border border-dashed rounded-md p-2">
-            <h4 className=" text-base font-semibold">
+          <div className="border border-dashed border-primary rounded-md p-2">
+            <h4 className=" text-base font-semibold text-white">
               <BsArrowDown className=" inline-block text-red-500 text-base" />
               <CountUp end={75} />
             </h4>
             <p className=" text-textColor text-sm">Open Tasks</p>
           </div>
-          <div className="border border-dashed rounded-md p-2">
-            <h4 className=" text-base font-semibold">
+          <div className="border border-dashed border-primary rounded-md p-2">
+            <h4 className=" text-base font-semibold text-white">
               <BsArrowUp className=" inline-block text-green-500 text-base" />
               <CountUp
                 end={15000}

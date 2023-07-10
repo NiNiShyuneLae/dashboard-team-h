@@ -49,7 +49,7 @@ const OverTimeChart = () => {
 
  
   return (
-    <div className="chart-container" style={{ width: "100%", height: "300px" }}>
+    <div className="chart-container" style={{ width: "100%", height: "300px"}}>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           width={512}
@@ -63,10 +63,11 @@ const OverTimeChart = () => {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis axisLine={false} dataKey="name" />
+          <XAxis  axisLine={false} dataKey="name" />
           <YAxis
             axisLine={false}
             type="number"
+            
             allowDataOverflow={true}
             domain={[49,84]}
             tickCount={7}
@@ -79,7 +80,7 @@ const OverTimeChart = () => {
             stackId="1"
             stroke="#00A2FE"
             strokeWidth="3"
-            fill="#d1e0f0"
+            fill="#387dc7"
           />
           <Area
             type="monotone"
@@ -87,7 +88,7 @@ const OverTimeChart = () => {
             stackId="0"
             stroke="#50CD89"
             strokeWidth="3"
-            fill="#E8FFF3"
+            fill="#95e6bb"
           />
         </AreaChart>
       </ResponsiveContainer>

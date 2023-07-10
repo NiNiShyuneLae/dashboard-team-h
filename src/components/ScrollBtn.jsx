@@ -103,7 +103,7 @@ const ScrollBtn = () => {
       {showButton && (
         <button
           onClick={handleOnClick}
-          className="bg-blue-300 hover:bg-primary transition-all duration-200 fixed bottom-10 right-3 p-2 rounded-lg text-white"
+          className="bg-primary bg-opacity-75 hover:bg-primary transition-all duration-200 fixed bottom-10 right-3 p-2 rounded-lg text-white"
         >
           <AiOutlineArrowUp className="w-[24px] h-[24px]" />
         </button>

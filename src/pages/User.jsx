@@ -8,6 +8,7 @@ import UserCard from '../components/UserCard'
 import UserTable from '../components/UserTable'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Pagination from '../components/Pagination'
 
 const User = () => {
     const nav = useNavigate()
@@ -409,7 +410,7 @@ const User = () => {
   return (
       <div className=' lg:px-[32px] px-[20px]  '>
               <div className="">
-        <p className=" text-[1.25rem] font-semibold">Projects</p>
+        <p className=" text-[1.25rem] font-semibold text-white">Projects</p>
         <div>
           <nav
             className="justify-between  pb-3 text-gray-700  sm:flex  bg-gray-5"
@@ -432,7 +433,7 @@ const User = () => {
               <li aria-current="page">
                 <a href="#" className=" text-[14px] font-medium">
                   <span className="text-textColor">/</span>{" "}
-                  <span className="text-black">Users</span>
+                  <span className="text-primary">Users</span>
                 </a>
               </li>
             </ol>
@@ -443,30 +444,30 @@ const User = () => {
           
           <div className='my-10 grid grid-cols-1 md:grid-cols-3 gap-3'>
               <div className='col-span-1 flex items-center  gap-1'>
-                 <h1 className='text-lg font-semibold'>Users (38)</h1>
-               <div className='flex  items-center  px-3 py-2 bg-white w-56 rounded-md'>
-                  <BsSearch className='text-textColor' />
+                 <h1 className='text-lg font-semibold text-white me-3'>Users (38)</h1>
+               <div className='flex  items-center  px-3 py-2 bg-cardColor w-56 rounded-md'>
+                  <BsSearch className='text-textColor ' />
                   <input type="search" placeholder='search' className='outline-none bg-transparent text-sm' />
               </div> 
               </div>
               <div className='col-span-1 ml-0 md:ml-auto'>
-                  <button className={`mr-2  p-2 rounded-lg ${tab==="grid"?"bg-blue-500":"first-line:"}`} onClick={()=>setTab("grid")}>
+                  <button className={`mr-2  p-2 rounded-lg ${tab==="grid"?"bg-primary":"first-line:"}`} onClick={()=>setTab("grid")}>
                       
                   <BiSolidGridAlt className='text-gray-200 text-lg'/>
                   </button>
-                  <button className={`mr-2  p-2 rounded-lg ${tab==="menu"?"bg-blue-500":"first-line:"}`} onClick={()=>setTab("menu")}>
+                  <button className={`mr-2  p-2 rounded-lg ${tab==="menu"?"bg-primary":"first-line:"}`} onClick={()=>setTab("menu")}>
                       
                   <FiMenu className='text-gray-200 text-lg'/>
                   </button>
               </div>
               <div className='col-span-1 md:ml-auto ml-0'>
-                  <select className='bg-white rounded-lg outline-none px-3 py-2'>
+                  <select className='bg-primary text-white rounded-lg outline-none px-3 py-2'>
                       <option value="" className=''>Recently Updated</option>
                       <option value="" className=''>Last Month</option>
                       <option value="" className=''>Last Quarter</option>
                       <option value="" className=''>Last Year</option>
                   </select>
-                  <select className='bg-white ml-5 rounded-lg outline-none px-3 py-2'>
+                  <select className='bg-primary text-white ml-5 rounded-lg outline-none px-3 py-2'>
                       <option value="">Excel</option>
                       <option value="">Pdf</option>
                       <option value="">Print</option>
@@ -486,8 +487,8 @@ const User = () => {
                   </div> :
                    <div className='grid grid-cols-1 '>
               <div className=" rounded-2xl overflow-x-auto  shadow-lg ">
-                <table className="w-full  text-sm text-left  dark:text-gray-400">
-                    <thead className="text-xs text-textColor uppercase bg-gray-50 ">
+                <table className="w-full  text-sm text-left  bg-cardColor">
+                    <thead className="text-xs text-textColor uppercase  ">
                         <tr>
                             <th scope="col" className="px-6 py-3">
                                 Managar
@@ -514,7 +515,7 @@ const User = () => {
                    
                 </table>
             </div>
-             
+             <Pagination/>
           </div>
           }
          

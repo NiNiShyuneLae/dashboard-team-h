@@ -4,7 +4,7 @@ const UserTable = ({ user }) => {
   return (
     <>
       <tbody>
-        <tr className="bg-white border-b  ">
+        <tr className="   ">
           <th
             scope="row"
             className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
@@ -18,16 +18,16 @@ const UserTable = ({ user }) => {
                 />
               </div>
               <div>
-                <h1 className="mb-1 text-gray-700 font-semibold hover:text-primary cursor-pointer">
+                <h1 className="mb-1 text-white font-semibold hover:text-primary cursor-pointer">
                   {user.name}
                 </h1>
-                <h1 className="text-textColor text-xs">{user.gamil}</h1>
+                <h1 className="text-textColor text-xs ">{user.gamil}</h1>
               </div>
             </div>
           </th>
-          <td className="px-6 py-4 font-semibold">{user.date}</td>
-          <td className="px-6 py-4 font-semibold">{user.amount}</td>
-          <td className={`px-6 py-4 text-center`}>
+          <td className="px-6 py-4 font-semibold text-white">{user.date}</td>
+          <td className="px-6 py-4 font-semibold text-white">{user.amount}</td>
+          <td className={`px-6 py-4 `}>
             <button
               className={`px-4 py-2 text-xs  font-medium  rounded-lg  ${
                 user.status === "approved"
@@ -39,7 +39,7 @@ const UserTable = ({ user }) => {
             </button>
           </td>
           <td className="px-6 py-4 ">
-            <button className="bg-gray-100 px-4 py-2 text-xs font-textColor font-medium hover:bg-gray-200 text-textColor rounded-lg">
+            <button className="bg-primary px-4 py-2 text-xs font-textColor font-medium text-white rounded-lg">
               View
             </button>
           </td>

@@ -32,6 +32,7 @@ const ProfileChart = () => {
             return "#5C5E6D";
           }
         },
+      
       ],
       pattern: {
         height: 0.5,
@@ -82,7 +83,7 @@ const ProfileChart = () => {
       labels: {
         style: {
           fontSize: '15px',
-          colors: '#B5B5C3',
+          colors: '#B8B5C3',
           fontWeight: 600
         }
       }
@@ -91,16 +92,16 @@ const ProfileChart = () => {
       labels: {
         style: {
           fontSize: '13px',
-          fontWeight: 600
-
+          fontWeight: 600,
+          colors: '#B8B5C3',
         }
       }
     }
   };
 return (
-    <div id="chart">
-        <p className="text-lg font-semibold">Top Selling Categories</p>
-        <p className="text-[#B5B5C3] font-medium">8k social visitors</p>
+    <div id="chart" className="bg-cardColor p-6 rounded-lg">
+        <p className="text-lg font-semibold text-white">Top Selling Categories</p>
+        <p className="text-primary font-medium">8k social visitors</p>
       <ReactApexChart
         options={options}
         series={seriesData}

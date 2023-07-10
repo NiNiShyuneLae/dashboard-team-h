@@ -23,7 +23,7 @@ const DatePicker = () => {
       <input
       
         type="text"
-        className="py-3 text-gray-500 font-medium px-12 w-full bg-gray-200 rounded-lg focus:outline-none"
+        className="py-3 text-textColor font-medium px-12 w-full bg-cardColor rounded-lg focus:outline-none"
         placeholder='Pick date range'
         ref={flatpickrRef}
         onFocus={() => clickHandler()}
